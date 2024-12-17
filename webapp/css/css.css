@@ -1,0 +1,287 @@
+body {
+  background-color:#979494;
+  font-family: "Lato",monospace;
+  font-style: normal;
+  font-weight: 600;
+  color:#FFFFFF;
+}
+
+.parametre{
+  margin-bottom: 7px;
+}
+
+ul{
+    list-style-type:none;
+    }
+
+/* Haut de la page */
+
+#head {
+  width: 100%;
+  margin: 2% 0% 1% 0%;
+}
+
+#headcol1 {
+	float: left;
+	width: 50%;
+  text-align: left;
+}
+#headcol2 {
+	float: left;
+  width: 0%;
+  text-align: center;
+}
+#headcol3 {
+	float: left;
+	width: 50%;
+  text-align: right;
+}
+
+#kpi {
+  text-align: center;
+  font-size: 50px;
+  vertical-align: middle;
+    margin-top: 20%;
+}
+
+/*Données pression*/
+
+table.temp {
+  /*width: 75%;*/
+  margin:auto;
+  padding: 0 0 0 0;
+}
+
+th.title {
+  margin-left: 1%;
+  padding-right: 10%;
+  text-align: center;
+  font-size: 12px;
+  color:#FFFFFF;
+  font-weight: 700;
+}
+
+td.target {
+  text-align: left;
+  font-size: 20px;
+  width: 40%;
+  color: #757575;
+  font-weight: 900;
+}
+
+td.value {
+  text-align: right;
+  font-size: 37px;
+  width: 40%;
+}
+
+.red {
+  color:#FF5252;
+}
+
+/*sv*/
+
+.box {
+  display: flex;
+  flex-wrap: row wrap;
+  padding-right: 10%;
+}
+
+.sv {
+  margin-left: 0%;
+  margin-top: 1%;
+  padding-right: 1%;
+  padding-left: 3%;
+  padding-top: 1%;
+  padding-bottom: 3%;
+  padding-top: 3%;
+  text-align: left;
+  font-size: 13x;
+  color:#383636;
+  font-weight: 600;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #6faace;
+}
+
+.fright{
+  float: right;
+}
+
+.label{
+  text-align: left;
+  padding-left: 5px;
+}
+
+#sv{
+  font-size: 15px;
+  font-weight: 800;
+  padding-inline-start: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+
+}
+
+#eventszone{
+  font-size: 15px;
+  font-weight: 800;
+  padding-inline-start: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+
+}
+
+#eventsother{
+  font-size: 15px;
+  font-weight: 800;
+  padding-inline-start: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+
+}
+
+#seq{
+  font-size: 15px;
+  font-weight: 800;
+  padding-inline-start: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#sequence{
+  font-size: 15px;
+  font-weight: 800;
+  padding-inline-start: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.lizone{
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border:solid;
+  border-color: #b88989;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  padding-left: 4px;
+  padding-right: 15px;
+  
+}
+
+.liseq{
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border:solid;
+  border-color: #b88989;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  padding-left: 4px;
+  padding-right: 15px;
+  
+}
+
+.svdet{
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+/*bas de la page*/
+
+div#foot {
+  position: relative;
+  width: 100%;
+  height: 20px;
+  margin: 2% 0% 1% 0%;
+  font-size: 15px;
+}
+
+#version {
+  float: left;
+  width: 20%;
+  text-align: left;
+}
+
+div#esphome {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
+div#mqtt {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
+div#plus {
+    float: left;
+    width: 5%;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+div#rpi {
+    float: left;
+    width: 20%;
+    text-align: center;
+  }
+
+div#fin {
+  float: left;
+  width: 20%;
+  text-align: right;
+}
+
+a, a:link, a:visited {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+a:hover {color: #FF5252;}
+
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;   
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: #3e95cd;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #3e95cd;
+    cursor: pointer;
+}
+
+.svred{
+  color:#702828;
+}
+
+.svgray{
+  color:#999595;
+}
+
+.svgray{
+  color:#bebcbc;
+}
+
+
+

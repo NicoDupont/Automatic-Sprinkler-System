@@ -1,0 +1,22 @@
+/rpi/secret.py
+/rpi/test.txt
+/rpi/test.py
+/rpi/test2.py
+/webapp/vendor
+/.fleet
+/.idea
+/.nova
+/.vscode
+/.zed
+__pycache__/
+/__pycache__
+*__pycache__*
+.Python
+# PyBuilder
+.pybuilder/
+target/
+# Jupyter Notebook
+.ipynb_checkpoints
+# IPython
+profile_default/
+ipython_config.py

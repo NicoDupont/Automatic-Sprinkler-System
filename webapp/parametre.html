@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--<meta http-equiv="refresh" content="15">-->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/css.css" rel="stylesheet">
+		<title>Parametres Globaux Arrosage</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12" id="head">
+					<a class="btn btn-primary" href="arrosage.html" role="button">Return</a>
+				</div>
+			</div>
+            <div class="row">
+                <div class="col-md-6">
+	<form id="formparameter" method="post" action="#">
+      <div class="row">
+        <div class="col-md-12">   
+          <div id="status">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+            <button type="submit" class="btn btn-primary">Maj</button>	
+    </div>
+      <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label for="mode">Mode Fonctionnement : <span id="modevalue"></span></label>
+                <select id="mode" name="mode" class="form-select">
+                    <option value="Auto">Auto</option>
+                    <option value="Test">Test</option>
+                    <option value="Manuel">Manuel</option>
+                    <option value="Hivernage">Hivernage</option>
+                    <option value="Stop">Stop</option>
+                    <option value="Demande">Demande</option>
+                    <option value="Domotique">Domotique</option>
+                    <option value="Weather">Weather</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label for="source">Source Eau : <span id="sourcevalue"></span></label>
+                <select id="source" name="source" class="form-select">
+                    <option value="Canal">Canal</option>
+                    <option value="Cuve">Cuve</option>
+                    <option value="Ville">Ville</option>
+                </select>
+            </div>
+        </div>
+    </div>
+      <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label for="coef">Durée Nominale : <span id="coefvalue"></span> %</label>
+                <input type="range" min="10" max="300" value="" step="5" class="form-control slider" id="coef" name="coef">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label for="heuredemande">Heure Demande : <span id="heuredemandevalue"></span> H</label>
+                <input type="range" min="0" max="23" value="" step="1" class="form-control slider" id="heuredemande" name="heuredemande">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label for="minutedemande">Minute Demande : <span id="minutedemandevalue"></span> Min</label>
+                <input type="range" min="0" max="59" value="" step="1" class="form-control slider" id="minutedemande" name="minutedemande">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label for="sequencedemande">Sequence Demande : <span id="sequencedemandevalue"></span></label>
+                <select id="sequencedemande" name="sequencedemande" class="form-select">
+                    <option value="S1">S1</option>
+                    <option value="S2">S2</option>
+                    <option value="S3">S3</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label for="testduration">Durée Test : <span id="testdurationvalue"></span> Seconds</label>
+                <input type="range" min="10" max="700" value="" step="10" class="form-control slider" id="testduration" name="testduration">
+            </div>
+        </div>
+    </div>
+   
+			<div class="row">
+				<div class="col-md-12">
+					<div class="form-group">
+						<label for="minpressure">Pression Minimum : <span id="minpressurevalue"></span> Bar</label>
+						<input type="range" min="0.5" max="4" value="" step="0.1" class="form-control slider" id="minpressure" name="minpressure">
+					</div>
+				</div>
+			</div>
+
+            <div class="row">
+				<div class="col-md-12">
+					<div class="form-group">
+						<label for="maxpressure">Pression Maximum : <span id="maxpressurevalue"></span> Bar</label>
+						<input type="range" min="1.0" max="10" value="" step="0.1" class="form-control slider" id="maxpressure" name="maxpressure">
+					</div>
+				</div>
+			</div>
+
+            <div class="row">
+				<div class="col-md-12">
+					<div class="form-group">
+						<label for="deltapressure">Pression delta Avant/Apres Filtre : <span id="deltapressurevalue"></span> Bar</label>
+						<input type="range" min="0" max="3" value="" step="0.1" class="form-control slider" id="deltapressure" name="deltapressure">
+					</div>
+				</div>
+			</div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label class="checkbox-inline">Test Pression Pompe Canal : <input type="checkbox"  id="overcanalpressure" name="overcanalpressure" value="yes" checked="true"></label>
+                        <!--<input type="hidden" name="ifttt" value="0" />-->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label class="checkbox-inline">Test Pression Pompe Cuve : <input type="checkbox"  id="overtankpressure" name="overtankpressure" value="yes" checked="true"></label>
+                        <!--<input type="hidden" name="ifttt" value="0" />-->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label class="checkbox-inline">Test Pression Eau Ville : <input type="checkbox"  id="overcitypressure" name="overcitypressure" value="yes" checked="true"></label>
+                        <!--<input type="hidden" name="ifttt" value="0" />-->
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label class="checkbox-inline">Gestion Cuve : <input type="checkbox"  id="activetank" name="activetank" value="yes" checked="true"></label>
+                        <!--<input type="hidden" name="ifttt" value="0" />-->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label class="checkbox-inline">Test Capacité Cuve : <input type="checkbox"  id="overcapacuve" name="overcapacuve" value="yes" checked="true"></label>
+                        <!--<input type="hidden" name="ifttt" value="0" />-->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+				<div class="col-md-12">
+					<div class="form-group">
+						<label for="nbcuve">Nb Cuve : <span id="nbcuvevalue"></span> IBC</label>
+						<input type="range" min="1" max="10" value="" step="1" class="form-control slider" id="nbcuve" name="nbcuve">
+					</div>
+				</div>
+			</div>
+            <div class="row">
+				<div class="col-md-12">
+					<div class="form-group">
+						<label for="nblitrecuve">Nb Litre Cuve : <span id="nblitrecuvevalue"></span> Litres</label>
+						<input type="range" min="0" max="1000" value="" step="10" class="form-control slider" id="nblitrecuve" name="nblitrecuve">
+					</div>
+				</div>
+			</div>
+            <div class="row">
+				<div class="col-md-12">
+					<div class="form-group">
+						<label for="seuilminicuve">Seuil Mini Cuve : <span id="seuilminicuvevalue"></span> %</label>
+						<input type="range" min="0" max="41" value="" step="1" class="form-control slider" id="seuilminicuve" name="seuilminicuve">
+					</div>
+				</div>
+			</div>
+            <div class="row">
+				<div class="col-md-12">
+					<div class="form-group">
+						<label for="seuilmaxcuve">Seuil Maxi Cuve : <span id="seuilmaxcuvevalue"></span> %</label>
+						<input type="range" min="41" max="100" value="" step="1" class="form-control slider" id="seuilmaxcuve" name="seuilmaxcuve">
+					</div>
+				</div>
+			</div>
+            <div class="row">
+				<div class="col-md-12">
+					<div class="form-group">
+						<label for="seuilautocuve">Seuil Remplissage Auto Cuve : <span id="seuilautocuvevalue"></span> %</label>
+						<input type="range" min="0" max="100" value="" step="1" class="form-control slider" id="seuilautocuve" name="seuilautocuve">
+					</div>
+				</div>
+			</div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label class="checkbox-inline">Gestion Pompe Canal : <input type="checkbox"  id="pompecanal" name="pompecanal" value="yes" checked="true"></label>
+                        <!--<input type="hidden" name="ifttt" value="0" />-->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label class="checkbox-inline">Gestion Pompe Cuve : <input type="checkbox"  id="pompecuve" name="pompecuve" value="yes" checked="true"></label>
+                        <!--<input type="hidden" name="ifttt" value="0" />-->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label class="checkbox-inline">Calcul Auto Coef : <input type="checkbox"  id="autocoef" name="autocoef" value="yes" checked="true"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="kpiautocoef">Kpi Calcul Auto Coef : <span id="kpiautocoefvalue"></span></label>
+                        <select id="kpiautocoef" name="kpiautocoef" class="form-select">
+                            <option value="Max">Max</option>
+                            <option value="Moyenne">Moyenne</option>
+                            <option value="90Percentile">90Percentile</option>
+                            <option value="80Percentile">80Percentile</option>
+                            <option value="70Percentile">70Percentile</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label class="checkbox-inline">Verif Ordre Zone : <input type="checkbox"  id="verifnbmaxsv" name="verifnbmaxsv" value="yes" checked="true"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+				<div class="col-md-12">
+					<div class="form-group">
+						<label for="nbmaxsv">Seuil Maximum Zone Active : <span id="nbmaxsvvalue"></span></label>
+						<input type="range" min="1" max="5" value="" step="1" class="form-control slider" id="nbmaxsv" name="nbmaxsv">
+					</div>
+				</div>
+			</div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label class="checkbox-inline">Test Précipitation : <input type="checkbox"  id="precipitation" name="precipitation" value="yes" checked="true"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+				<div class="col-md-12">
+					<div class="form-group">
+						<label for="nbmaxsv">Nombre de jour pour le cumul des Précipitation : <span id="nbjourprecipitationvalue"></span> jour</label>
+						<input type="range" min="1" max="5" value="" step="1" class="form-control slider" id="nbjourprecipitation" name="nbjourprecipitation">
+					</div>
+				</div>
+			</div>
+            <div class="row">
+				<div class="col-md-12">
+					<div class="form-group">
+						<label for="nbmaxsv">Seuil Minimum de Précipitation : <span id="seuilprecipitationvalue"></span> mm</label>
+						<input type="range" min="1" max="20" value="" step="1" class="form-control slider" id="seuilprecipitation" name="seuilprecipitation">
+					</div>
+				</div>
+			</div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label class="checkbox-inline">Test Debut / Fin Sequence : <input type="checkbox"  id="verifseqhour" name="verifseqhour" value="yes" checked="true"></label>
+                    </div>
+                </div>
+            </div>
+			
+		</form>
+        </div>
+
+		</div>
+		<script src="js/jquery.js"></script>
+		<script src="js/parameter.js"></script>
+	</body>
+</html>
