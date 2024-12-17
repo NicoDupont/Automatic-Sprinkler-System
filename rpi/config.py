@@ -1,5 +1,6 @@
 
 import yaml
+import secret as secret
 
 with open('config.yaml') as f:
     config = yaml.load(f, Loader=yaml.FullLoader)
@@ -7,19 +8,19 @@ with open('config.yaml') as f:
 LOG_LEVEL_STREAM = config['p_log_level_stream']   # log level to be write like print  NOTSET | DEBUG | INFO | WARNING | ERROR | CRITICAL
 LOG_LEVEL_FILE = config['p_log_level_file']       # log level to be write in log file  NOTSET | DEBUG | INFO | WARNING | ERROR | CRITICAL
 #settings for OpenWeatherMap API
-API_KEY = config['p_api_key_openweatermap']
-LATITUDE = config['p_latitude']
-LONGITUDE = config['p_longitude']
+API_KEY = secret.p_api_key_openweatermap
+LATITUDE = secret.p_latitude
+LONGITUDE = secret.p_longitude
 
 IP_BDD_SERVER = config['p_ip_bdd']
 USER_BDD = config['p_user_bdd']
-PASSWORD_BDD = config['p_password_bdd']
+PASSWORD_BDD = secret.p_password_bdd
 LOG_DATABASE = config['p_log_bdd']
 NAME_DATABASE = config['p_database']
 
 IP_MQTT_BROKER = config['p_ip_mqtt']
 USER_MQTT = config['p_user_mqtt']
-PASSWORD_MQTT = config['p_password_mqtt']
+PASSWORD_MQTT = secret.p_password_mqtt
 PORT_MQTT = config['p_port_mqtt']
 FILE_TOPIC_MQTT = config['p_topics_mqtt']
 PREFIX_MQTT= config['P_prefix_mqtt']    
