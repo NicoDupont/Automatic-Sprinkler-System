@@ -1,0 +1,48 @@
+---
+p_rpi : 1                                       # rpi number 1 => you can use 1 or more rpi if you don't have enought gpio just run the same program (only main.py) with "2"
+p_log_level_stream: "INFO" # log level to be write like print  NOTSET | DEBUG | INFO | WARNING | ERROR | CRITICAL
+p_log_level_file: "INFO" # log level to be write in log file   NOTSET | DEBUG | INFO | WARNING | ERROR | CRITICAL
+p_name : "IrriPi"                               # project name
+p_version : "2024.12"                            # project version
+p_date_version : "17/12/2024"                   # date version
+p_sleep_loop : 8                                # time in seconds to wait for the next loop
+p_watering : true                               # active or not the watering
+p_delay_sequence : -15                          # delta time in seconds between two zones (avoid water hammer)  (not use for test and manual mode)                          
+p_min_runtime : 1                               # minimum run time in minute for one sequence (not use for test and manual mode)           
+p_max_runtime : 180                             # maximum run time in minute for one sequence (not use for test and manual mode)           
+p_log_bdd : true                                # log data in the database
+p_anomaly : true                                # active the anomalies detection
+p_lcd_screen : true                            # active  the lcd
+p_lcd_sleep_time : 2                            # sleep time in seconds fort reading the lcd
+p_mqtt : true                                  # active the mqtt
+p_ip_mqtt : "192.168.1.125"                     # local ip of the mqtt broker
+p_ip_ha : "192.168.1.125"                       # local ip of the ha server
+p_ip_www : "www.google.com"                       # local ip of the ha server
+p_mqtt : true
+p_port_mqtt : 1883                              # port number of the mqtt broker
+p_user_mqtt : "nicolas"                         # user of the mqtt broker for auth
+p_topics_mqtt : "json/topic_mqtt.json"         # lists of mqtt topics to subscibe
+P_prefix_mqtt : "ha"                            # name for mqtt automatique discovery in homeassistant
+p_device_mqtt : "arrosage"                      # device name for homeassistant
+p_sufix_sta_mqtt : "/state"                           # suffix for state topic ?
+p_sufix_cmd_mqtt : "/cmd"                           # suffix for command topic ?
+p_password_mqtt : ""              # password of the mqtt broker for auth
+p_zp_file : 'json/zone_parameters.json'         # file where the zone settings are stored
+p_gp_file : 'json/global_parameters.json'       # file where global settings are stored
+p_zone_file : 'json/sequence_zone.json'         # file where the zone sequence is stored
+p_sequence_file : 'json/sequence.json'          # file where the sequence is stored
+p_az_file : 'json/active_zone.json'             # file where the active valves are stored
+p_mqtt_bdd_autodiscovery_file : 'json/mqtt_bdd_autodiscovery.json' # file where mqtt config for mqtt autodiscovery in ha is stored
+p_ip_web : "192.168.1.123"                      # local server web ip for web UI
+p_database : "ARROSAGE"                         # database name
+p_ip_bdd : "192.168.1.123"                       # local ip of the database server
+p_user_bdd : "nicolas"                             # user database
+p_password_bdd : ""            # password database
+p_gpio: [4,17,27,22,10,9,11,5,6,13,19,26,21,20,16,12,7,8,25,24,23,18]  # list of gpio for this rpi
+p_min_coef : 20
+p_max_coef : 200
+p_min_coef_temp : 20
+p_max_coef_temp : 45
+p_api_key_openweatermap : ""
+p_latitude :  #your location
+p_longitude :  #your location

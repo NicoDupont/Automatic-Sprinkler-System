@@ -1,0 +1,15 @@
+[Unit]
+Description=Arrosage Mqtt Publish
+After=network-online.target sysinit.target
+Wants=network-online.target sysinit.target
+
+[Service]
+User=pi
+WorkingDirectory=/home/pi/arrosage
+ExecStart=/usr/bin/python3 /home/pi/arrosage/mqtt_subscribe.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+

@@ -1,0 +1,119 @@
+{"entities": [
+    {
+        "topic": "homeassistant/number/arrosage/coef/config",
+        "payload": "{\"device\":{\"identifiers\":\"Arrosage\",\"manufacturer\":\"NICODL\",\"model\":\"Irripi Rpi-2\",\"name\":\"Arrosage\",\"configuration_url\":\"http://192.168.1.123/ARROSAGE/arrosage.html\",\"sw_version\":\"2024.5\"},\"object_id\":\"arrosage_coef\",\"unique_id\":\"arrosage_coef\",\"name\":\"arrosage_coef\",\"icon\":\"mdi:percent\",\"command_topic\":\"ha/arrosage/parametre/coef/cmd\",\"state_topic\":\"ha/arrosage/parametre/coef\",\"min\":5,\"max\":300,\"step\":10,\"unit_of_measurement\":\"%\",\"qos\":1}"
+    },
+    {
+        "topic": "homeassistant/select/arrosage/mode/config",
+        "payload": "{\"device\":{\"identifiers\":\"Arrosage\",\"manufacturer\":\"NICODL\",\"model\":\"Irripi Rpi-2\",\"name\":\"Arrosage\",\"configuration_url\":\"http://192.168.1.123/ARROSAGE/arrosage.html\",\"sw_version\":\"2024.5\"},\"object_id\":\"arrosage_mode\",\"unique_id\":\"arrosage_mode\",\"name\":\"arrosage_mode\",\"icon\":\"mdi:sprinkler-variant\",\"command_topic\":\"ha/arrosage/parametre/mode/cmd\",\"state_topic\":\"ha/arrosage/parametre/mode\",\"options\":[\"Auto\",\"Test\",\"Manuel\",\"Stop\",\"Hivernage\",\"Domotique\",\"Demande\"],\"qos\":1}"
+    },
+    {
+        "topic": "homeassistant/select/arrosage/source/config",
+        "payload": "{\"device\":{\"identifiers\":\"Arrosage\",\"manufacturer\":\"NICODL\",\"model\":\"Irripi Rpi-2\",\"name\":\"Arrosage\",\"configuration_url\":\"http://192.168.1.123/ARROSAGE/arrosage.html\",\"sw_version\":\"2024.5\"},\"object_id\":\"arrosage_source\",\"unique_id\":\"arrosage_source\",\"name\":\"arrosage_source\",\"icon\":\"mdi:sprinkler-variant\",\"command_topic\":\"ha/arrosage/parametre/source/cmd\",\"state_topic\":\"ha/arrosage/parametre/source\",\"options\":[\"Ville\",\"Canal\",\"Cuve\"],\"qos\":1}"
+    },
+    {
+        "topic": "homeassistant/sensor/arrosage/nb_erreur/config",
+        "payload": "{\"device\":{\"identifiers\":\"Arrosage\",\"manufacturer\":\"NICODL\",\"model\":\"Irripi Rpi-2\",\"name\":\"Arrosage\",\"configuration_url\":\"http://192.168.1.123/ARROSAGE/arrosage.html\",\"sw_version\":\"2024.5\"},\"object_id\":\"arrosage_nb_erreur\",\"unique_id\":\"arrosage_nb_erreur\",\"name\":\"arrosage_nb_erreur\",\"icon\":\"mdi:alert-circle\",\"state_topic\":\"ha/arrosage/status/nb_erreur\",\"entity_category\";\"sensors\",\"qos\":1}"
+    }, 
+    {
+        "topic": "homeassistant/sensor/arrosage/nb_erreur_critique/config",
+        "payload": "{\"device\":{\"identifiers\":\"Arrosage\",\"manufacturer\":\"NICODL\",\"model\":\"Irripi Rpi-2\",\"name\":\"Arrosage\",\"configuration_url\":\"http://192.168.1.123/ARROSAGE/arrosage.html\",\"sw_version\":\"2024.5\"},\"object_id\":\"arrosage_nb_erreur_critique\",\"unique_id\":\"arrosage_nb_erreur_critique\",\"name\":\"arrosage_nb_erreur_critique\",\"icon\":\"mdi:alert-circle\",\"state_topic\":\"ha/arrosage/status/nb_erreur-critique\",\"entity_category\";\"sensors\",\"qos\":1}"
+    }, 
+    {
+        "topic": "homeassistant/sensor/arrosage/loop_main/config",
+        "payload": "{\"device\":{\"identifiers\":\"Arrosage\",\"manufacturer\":\"NICODL\",\"model\":\"Irripi Rpi-2\",\"name\":\"Arrosage\",\"configuration_url\":\"http://192.168.1.123/ARROSAGE/arrosage.html\",\"sw_version\":\"2024.5\"},\"object_id\":\"arrosage_loop_main\",\"unique_id\":\"arrosage_loop_main\",\"name\":\"arrosage_loop_main\",\"icon\":\"mdi:sync\",\"state_topic\":\"ha/arrosage/status/loop_main\",\"entity_category\";\"diagnostic\",\"qos\":1}"
+    }, 
+    {
+        "topic": "homeassistant/sensor/arrosage/loop_lcd/config",
+        "payload": "{\"device\":{\"identifiers\":\"Arrosage\",\"manufacturer\":\"NICODL\",\"model\":\"Irripi Rpi-2\",\"name\":\"Arrosage\",\"configuration_url\":\"http://192.168.1.123/ARROSAGE/arrosage.html\",\"sw_version\":\"2024.5\"},\"object_id\":\"arrosage_loop_lcd\",\"unique_id\":\"arrosage_loop_lcd\",\"name\":\"arrosage_loop_lcd\",\"icon\":\"mdi:sync\",\"state_topic\":\"ha/arrosage/status/loop_lcd\",\"entity_category\";\"diagnostic\",\"qos\":1}"
+    }, 
+    {
+        "topic": "homeassistant/sensor/arrosage/loop_diagnostic/config",
+        "payload": "{\"device\":{\"identifiers\":\"Arrosage\",\"manufacturer\":\"NICODL\",\"model\":\"Irripi Rpi-2\",\"name\":\"Arrosage\",\"configuration_url\":\"http://192.168.1.123/ARROSAGE/arrosage.html\",\"sw_version\":\"2024.5\"},\"object_id\":\"arrosage_loop_diagnostic\",\"unique_id\":\"arrosage_loop_diagnostic\",\"name\":\"arrosage_loop_diagnostic\",\"icon\":\"mdi:sync\",\"state_topic\":\"ha/arrosage/status/loop_diagnostic\",\"entity_category\";\"diagnostic\",\"qos\":1}"
+    }, 
+    {
+        "topic": "homeassistant/sensor/arrosage/local_ip/config",
+        "payload": "{\"device\":{\"identifiers\":\"Arrosage\",\"manufacturer\":\"NICODL\",\"model\":\"Irripi Rpi-2\",\"name\":\"Arrosage\",\"configuration_url\":\"http://192.168.1.123/ARROSAGE/arrosage.html\",\"sw_version\":\"2024.5\"},\"object_id\":\"arrosage_local_ip\",\"unique_id\":\"arrosage_local_ip\",\"name\":\"arrosage_local_ip\",\"icon\":\"mdi:ip-network-outline\",\"state_topic\":\"ha/arrosage/status/local_ip\",\"entity_category\";\"diagnostic\",\"qos\":1}"
+    }, 
+    {
+        "topic": "homeassistant/sensor/arrosage/temperature_cpu/config",
+        "payload": "{\"device\":{\"identifiers\":\"Arrosage\",\"manufacturer\":\"NICODL\",\"model\":\"Irripi Rpi-2\",\"name\":\"Arrosage\",\"configuration_url\":\"http://192.168.1.123/ARROSAGE/arrosage.html\",\"sw_version\":\"2024.5\"},\"object_id\":\"arrosage_temperature_cpu\",\"unique_id\":\"arrosage_temperature_cpu\",\"name\":\"arrosage_temperature_cpu\",\"icon\":\"mdi:cpu-32-bit\",\"state_topic\":\"ha/arrosage/status/temperature_cpu\",\"entity_category\";\"diagnostic\",\"qos\":1}"
+    }, 
+    {
+        "topic": "homeassistant/sensor/arrosage/disk_usage/config",
+        "payload": "{\"device\":{\"identifiers\":\"Arrosage\",\"manufacturer\":\"NICODL\",\"model\":\"Irripi Rpi-2\",\"name\":\"Arrosage\",\"configuration_url\":\"http://192.168.1.123/ARROSAGE/arrosage.html\",\"sw_version\":\"2024.5\"},\"object_id\":\"arrosage_disk_usage\",\"unique_id\":\"arrosage_disk_usage\",\"name\":\"arrosage_disk_usage\",\"icon\":\"mdi:harddisk\",\"state_topic\":\"ha/arrosage/status/disk_usage\",\"entity_category\";\"diagnostic\",\"qos\":1}"
+    }, 
+    {
+        "topic": "homeassistant/sensor/arrosage/load_average_cpu/config",
+        "payload": "{\"device\":{\"identifiers\":\"Arrosage\",\"manufacturer\":\"NICODL\",\"model\":\"Irripi Rpi-2\",\"name\":\"Arrosage\",\"configuration_url\":\"http://192.168.1.123/ARROSAGE/arrosage.html\",\"sw_version\":\"2024.5\"},\"object_id\":\"arrosage_load_average_cpu\",\"unique_id\":\"arrosage_load_average_cpu\",\"name\":\"arrosage_load_average_cpu\",\"icon\":\"mdi:head-sync-outline\",\"state_topic\":\"ha/arrosage/status/load_average_cpu\",\"entity_category\";\"diagnostic\",\"qos\":1}"
+    }, 
+    {
+        "topic": "homeassistant/sensor/arrosage/python_version/config",
+        "payload": "{\"device\":{\"identifiers\":\"Arrosage\",\"manufacturer\":\"NICODL\",\"model\":\"Irripi Rpi-2\",\"name\":\"Arrosage\",\"configuration_url\":\"http://192.168.1.123/ARROSAGE/arrosage.html\",\"sw_version\":\"2024.5\"},\"object_id\":\"arrosage_python_version\",\"unique_id\":\"arrosage_python_version\",\"name\":\"arrosage_python_version\",\"icon\":\"mdi:language-python\",\"state_topic\":\"ha/arrosage/status/python_version\",\"entity_category\";\"diagnostic\",\"qos\":1}"
+    }, 
+    {
+        "topic": "homeassistant/sensor/arrosage/uptime/config",
+        "payload": "{\"device\":{\"identifiers\":\"Arrosage\",\"manufacturer\":\"NICODL\",\"model\":\"Irripi Rpi-2\",\"name\":\"Arrosage\",\"configuration_url\":\"http://192.168.1.123/ARROSAGE/arrosage.html\",\"sw_version\":\"2024.5\"},\"object_id\":\"arrosage_uptime\",\"unique_id\":\"arrosage_uptime\",\"name\":\"arrosage_uptime\",\"icon\":\"mdi:sort-clock-descending-outline\",\"state_topic\":\"ha/arrosage/status/uptime\",\"entity_category\";\"diagnostic\",\"qos\":1}"
+    }, 
+    {
+        "topic": "homeassistant/sensor/arrosage/memory_usage/config",
+        "payload": "{\"device\":{\"identifiers\":\"Arrosage\",\"manufacturer\":\"NICODL\",\"model\":\"Irripi Rpi-2\",\"name\":\"Arrosage\",\"configuration_url\":\"http://192.168.1.123/ARROSAGE/arrosage.html\",\"sw_version\":\"2024.5\"},\"object_id\":\"arrosage_memory_usage\",\"unique_id\":\"arrosage_memory_usage\",\"name\":\"arrosage_memory_usage\",\"icon\":\"mdi:memory\",\"state_topic\":\"ha/arrosage/status/memory_usage\",\"entity_category\";\"diagnostic\",\"qos\":1}"
+    }, 
+    {
+        "topic": "homeassistant/sensor/arrosage/nb_zone_active/config",
+        "payload": "{\"device\":{\"identifiers\":\"Arrosage\",\"manufacturer\":\"NICODL\",\"model\":\"Irripi Rpi-2\",\"name\":\"Arrosage\",\"configuration_url\":\"http://192.168.1.123/ARROSAGE/arrosage.html\",\"sw_version\":\"2024.5\"},\"object_id\":\"arrosage_nb_zone_active\",\"unique_id\":\"arrosage_nb_zone_active\",\"name\":\"arrosage_nb_zone_active\",\"icon\":\"mdi:map\",\"state_topic\":\"ha/arrosage/status/nb_zone_active\",\"entity_category\";\"sensors\",\"qos\":1}"
+    },  
+    {
+        "topic": "homeassistant/sensor/arrosage/nb_sequence_active/config",
+        "payload": "{\"device\":{\"identifiers\":\"Arrosage\",\"manufacturer\":\"NICODL\",\"model\":\"Irripi Rpi-2\",\"name\":\"Arrosage\",\"configuration_url\":\"http://192.168.1.123/ARROSAGE/arrosage.html\",\"sw_version\":\"2024.5\"},\"object_id\":\"arrosage_nb_sequence_active\",\"unique_id\":\"arrosage_nb_sequence_active\",\"name\":\"arrosage_nb_sequence_active\",\"icon\":\"mdi:map\",\"state_topic\":\"ha/arrosage/status/nb_sequence_active\",\"entity_category\";\"sensors\",\"qos\":1}"
+    },     
+    {
+        "topic": "homeassistant/sensor/arrosage/zone_active/config",
+        "payload": "{\"device\":{\"identifiers\":\"Arrosage\",\"manufacturer\":\"NICODL\",\"model\":\"Irripi Rpi-2\",\"name\":\"Arrosage\",\"configuration_url\":\"http://192.168.1.123/ARROSAGE/arrosage.html\",\"sw_version\":\"2024.5\"},\"object_id\":\"arrosage_zone_active\",\"unique_id\":\"arrosage_zone_active\",\"name\":\"arrosage_zone_active\",\"icon\":\"mdi:valve-open\",\"state_topic\":\"ha/arrosage/status/zone_active\",\"entity_category\";\"sensors\",\"qos\":1}"
+    },  
+    {
+        "topic": "homeassistant/sensor/arrosage/sequence_active/config",
+        "payload": "{\"device\":{\"identifiers\":\"Arrosage\",\"manufacturer\":\"NICODL\",\"model\":\"Irripi Rpi-2\",\"name\":\"Arrosage\",\"configuration_url\":\"http://192.168.1.123/ARROSAGE/arrosage.html\",\"sw_version\":\"2024.5\"},\"object_id\":\"arrosage_sequence_active\",\"unique_id\":\"arrosage_sequence_active\",\"name\":\"arrosage_sequence_active\",\"icon\":\"mdi:valve-open\",\"state_topic\":\"ha/arrosage/status/sequence_active\",\"entity_category\";\"sensors\",\"qos\":1}"
+    },   
+    {
+        "topic": "homeassistant/binary_sensor/arrosage/etat/config",
+        "payload": "{\"device\":{\"identifiers\":\"Arrosage\",\"manufacturer\":\"NICODL\",\"model\":\"Irripi Rpi-2\",\"name\":\"Arrosage\",\"configuration_url\":\"http://192.168.1.123/ARROSAGE/arrosage.html\",\"sw_version\":\"2024.5\"},\"object_id\":\"arrosage_etat\",\"unique_id\":\"arrosage_etat\",\"name\":\"arrosage_etat\",\"icon\":\"mdi:sprinkler-variant\",\"payload_on\":\"1\",\"payload_off\":\"0\",\"state_topic\":\"ha/arrosage/status/arrosage\",\"entity_category\";\"diagnostic\",\"qos\":1}"
+    },
+    {
+        "topic": "homeassistant/binary_sensor/arrosage/erreur/config",
+        "payload": "{\"device\":{\"identifiers\":\"Arrosage\",\"manufacturer\":\"NICODL\",\"model\":\"Irripi Rpi-2\",\"name\":\"Arrosage\",\"configuration_url\":\"http://192.168.1.123/ARROSAGE/arrosage.html\",\"sw_version\":\"2024.5\"},\"object_id\":\"arrosage_erreur\",\"unique_id\":\"arrosage_erreur\",\"name\":\"arrosage_erreur\",\"icon\":\"mdi:alert-outline\",\"payload_on\":\"1\",\"payload_off\":\"0\",\"state_topic\":\"ha/arrosage/status/erreur\",\"entity_category\";\"diagnostic\",\"qos\":1}"
+    },
+    {
+        "topic": "homeassistant/binary_sensor/arrosage/erreur_critique/config",
+        "payload": "{\"device\":{\"identifiers\":\"Arrosage\",\"manufacturer\":\"NICODL\",\"model\":\"Irripi Rpi-2\",\"name\":\"Arrosage\",\"configuration_url\":\"http://192.168.1.123/ARROSAGE/arrosage.html\",\"sw_version\":\"2024.5\"},\"object_id\":\"arrosage_erreur_critique\",\"unique_id\":\"arrosage_erreur_critique\",\"name\":\"arrosage_erreur_critique\",\"icon\":\"mdi:alert-outline\",\"payload_on\":\"1\",\"payload_off\":\"0\",\"state_topic\":\"ha/arrosage/status/erreur_critique\",\"entity_category\";\"diagnostic\",\"qos\":1}"
+    },
+    {
+    "topic": "homeassistant/switch/arrosage/Z1_active/config",
+    "payload": "{\"device\":{\"identifiers\":\"Arrosage\",\"manufacturer\":\"NICODL\",\"model\":\"Irripi Rpi-2\",\"name\":\"Arrosage\",\"configuration_url\":\"http://192.168.1.123/ARROSAGE/arrosage.html\",\"sw_version\":\"2024.5\"},\"object_id\":\"arrosage_z1_active\",\"unique_id\":\"arrosage_z1_active\",\"name\":\"arrosage_z1_active\",\"icon\":\"mdi:run\",\"command_topic\":\"ha/arrosage/Z1/active/cmd\",\"payload_on\":\"1\",\"payload_off\":\"0\",\"state_topic\":\"ha/arrosage/Z1/active\",\"state_on\":1,\"state_off\":0,\"qos\":1}"
+    },
+    {
+    "topic": "homeassistant/switch/arrosage/Z1_etat/config",
+    "payload": "{\"device\":{\"identifiers\":\"Arrosage\",\"manufacturer\":\"NICODL\",\"model\":\"Irripi Rpi-2\",\"name\":\"Arrosage\",\"configuration_url\":\"http://192.168.1.123/ARROSAGE/arrosage.html\",\"sw_version\":\"2024.5\"},\"object_id\":\"arrosage_z1_etat\",\"unique_id\":\"arrosage_z1_etat\",\"name\":\"arrosage_z1_etat\",\"icon\":\"mdi:sprinkler-variant\",\"command_topic\":\"ha/arrosage/Z1/etat/cmd\",\"payload_on\":\"1\",\"payload_off\":\"0\",\"state_topic\":\"ha/arrosage/Z1/etat\",\"qos\":1}"
+    },
+    {
+    "topic": "homeassistant/number/arrosage/Z1_duree/config",
+    "payload": "{\"device\":{\"identifiers\":\"Arrosage\",\"manufacturer\":\"NICODL\",\"model\":\"Irripi Rpi-2\",\"name\":\"Arrosage\",\"configuration_url\":\"http://192.168.1.123/ARROSAGE/arrosage.html\",\"sw_version\":\"2024.5\"},\"object_id\":\"arrosage_z1_duree\",\"unique_id\":\"arrosage_z1_duree\",\"name\":\"arrosage_z1_duree\",\"icon\":\"mdi:timer-sand\",\"state_topic\":\"ha/arrosage/Z1/duree/cmd\",\"command_topic\":\"ha/arrosage/Z1/duree/cmd\",\"optimistic\":\"false\",\"retain\":\"true\",\"min\":\"5\",\"max\":\"180\",\"step\":\"1\",\"qos\":1}"
+    },
+    {
+    "topic": "homeassistant/select/arrosage/Z1_sequence/config",
+    "payload": "{\"device\":{\"identifiers\":\"Arrosage\",\"manufacturer\":\"NICODL\",\"model\":\"Irripi Rpi-2\",\"name\":\"Arrosage\",\"configuration_url\":\"http://192.168.1.123/ARROSAGE/arrosage.html\",\"sw_version\":\"2024.5\"},\"object_id\":\"arrosage_z1_sequence\",\"unique_id\":\"arrosage_z1_sequence\",\"name\":\"arrosage_z1_sequence\",\"icon\":\"mdi:sprinkler-variant\",\"command_topic\":\"ha/arrosage/Z1/sequence/cmd\",\"state_topic\":\"ha/arrosage/Z1/sequence\",\"options\":[\"S1\",\"S2\",\"S3\"],\"qos\":1}"
+    },
+    {
+    "topic": "homeassistant/number/arrosage/Z1_coef/config",
+    "payload": "{\"device\":{\"identifiers\":\"Arrosage\",\"manufacturer\":\"NICODL\",\"model\":\"Irripi Rpi-2\",\"name\":\"Arrosage\",\"configuration_url\":\"http://192.168.1.123/ARROSAGE/arrosage.html\",\"sw_version\":\"2024.5\"},\"object_id\":\"arrosage_z1_coef\",\"unique_id\":\"arrosage_z1_coef\",\"name\":\"arrosage_z1_coef\",\"icon\":\"mdi:timer-sand\",\"state_topic\":\"ha/arrosage/Z1/coef\",\"command_topic\":\"ha/arrosage/Z1/coef/cmd\",\"optimistic\":\"false\",\"retain\":\"true\",\"min\":\"5\",\"max\":\"300\",\"step\":\"1\",\"unit_of_measurement\":\"%\",\"qos\":1}"
+    },
+    {
+    "topic": "homeassistant/number/arrosage/Z1_ordre/config",
+    "payload": "{\"device\":{\"identifiers\":\"Arrosage\",\"manufacturer\":\"NICODL\",\"model\":\"Irripi Rpi-2\",\"name\":\"Arrosage\",\"configuration_url\":\"http://192.168.1.123/ARROSAGE/arrosage.html\",\"sw_version\":\"2024.5\"},\"object_id\":\"arrosage_z1_ordre\",\"unique_id\":\"arrosage_z1_ordre\",\"name\":\"arrosage_z1_ordre\",\"icon\":\"mdi:counter\",\"state_topic\":\"ha/arrosage/Z1/ordre\",\"command_topic\":\"ha/arrosage/Z1/ordre/cmd\",\"optimistic\":\"false\",\"retain\":\"true\",\"min\":\"1\",\"max\":\"30\",\"step\":\"1\",\"qos\":1}"
+    }
+    ,
+    {
+    "topic": "homeassistant/button/arrosage/restart/config",
+    "payload": "{\"device\":{\"identifiers\":\"Arrosage\",\"manufacturer\":\"NICODL\",\"model\":\"Irripi Rpi-2\",\"name\":\"Arrosage\",\"configuration_url\":\"http://192.168.1.123/ARROSAGE/arrosage.html\",\"sw_version\":\"2024.5\"},\"object_id\":\"arrosage_restart\",\"unique_id\":\"arrosage_restart\",\"name\":\"arrosage_restart\",\"command_topic\":\"ha/arrosage/status/restart\",\"retain\":\"false\",\"payload_press\":\"restart\",\"entity_category\":\"config\",\"device_class\":\"restart\",\"qos\":1}"
+    }
+]}
