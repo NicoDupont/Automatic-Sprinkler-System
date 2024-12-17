@@ -151,7 +151,7 @@ sudo systemctl restart arrosage-main.service
 
 **Functional Diagram :**
 
-![Functional_Diagram](https://github.com/NicoDupont/Arrosage-Automatique/blob/main/doc/irripi.png)
+![Functional_Diagram](https://github.com/NicoDupont/Automatic-Sprinkler-System/blob/main/doc/irripi.png)
 
 **Watering parts**
 
@@ -164,7 +164,7 @@ sudo systemctl restart arrosage-main.service
 - 1x AC 24v 1,6A output rail din power supply (for solenoid valves) [links](https://www.amazon.fr/gp/product/B00F4QIL06/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1)
 - 1x DC 5v 2.5A output power supply (for raspberry, esp8266, relay, electronic...)
 
-![Electronics_Box](https://github.com/NicoDupont/Arrosage-Automatique/blob/main/doc/electric_box.jpg)
+![Electronics_Box](https://github.com/NicoDupont/Automatic-Sprinkler-System/blob/main/doc/electric_box.jpg)
 
 **Electronics Parts**
 
@@ -178,21 +178,21 @@ sudo systemctl restart arrosage-main.service
 - 1x lcd 20x4 i2c 5v
 - 1x rtc module DS3231 i2c 3.3v
 
-![Electronics_Box](https://github.com/NicoDupont/Arrosage-Automatique/blob/main/doc/electronics_box.jpg)
-![Electronics_Box](https://github.com/NicoDupont/Arrosage-Automatique/blob/main/doc/electronics_box2.jpg)
+![Electronics_Box](https://github.com/NicoDupont/Automatic-Sprinkler-System/blob/main/doc/electronics_box.jpg)
+![Electronics_Box](https://github.com/NicoDupont/Automatic-Sprinkler-System/blob/main/doc/electronics_box2.jpg)
 
 **Web App :**
 
 The web app  :  
 
-![web app irripi](https://github.com/NicoDupont/Arrosage-Automatique/blob/main/doc/webapp1.png)
+![web app irripi](https://github.com/NicoDupont/Automatic-Sprinkler-System/blob/main/doc/webapp1.png)
 
 
 **Schematic :**
 
-![fritzing irripi rpi](https://github.com/NicoDupont/Arrosage-Automatique/blob/main/doc/irripi_bb.png)
+![fritzing irripi rpi](https://github.com/NicoDupont/Automatic-Sprinkler-System/blob/main/doc/irripi_bb.png)
 
 **Integration in [Home-Assistant](https://www.home-assistant.io/)**
 
-![Home-Assistant lovelace](https://github.com/NicoDupont/Arrosage-Automatique/blob/main/doc/lovelace.png)
-![Home-Assistant lovelace](https://github.com/NicoDupont/Arrosage-Automatique/blob/main/doc/mqtt.png)
+![Home-Assistant lovelace](https://github.com/NicoDupont/Automatic-Sprinkler-System/blob/main/doc/lovelace.png)
+![Home-Assistant lovelace](https://github.com/NicoDupont/Automatic-Sprinkler-System/blob/main/doc/mqtt.png)
